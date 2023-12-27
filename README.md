@@ -302,3 +302,99 @@ document.getElementById("n3").value=" ";
 OUTPUT:
 
 ![calpic](https://github.com/Mythili7339267708/ODD23-24-WT-JavaScript/assets/144260246/dad13db2-ba46-4155-a22c-e70d4efd9799)
+
+RESULT:
+
+Thus the java code executed to implement a simple calculator.
+
+PROGRAM 5
+
+AIM:
+
+To design a simple text editor JavaScript application where we can manipulate the user input in different styles, edit the input, capitalize, and many string operations.
+
+DESIGNING PROCEDURE:
+
+STEP 1: Start define the document as HTML.
+
+STEP 2: Open the HTML structure with necessary head and body .Give the script type as text/javascript.
+
+STEP 3: Define the function for the program as function f1() for bold, function f2() for italics, function f3() for uppercase, function f4() for lowercase, function f5() for capitalize, function f6() for right ,function f7() for left, function f8() for center, function f9() for clear formatting.
+
+STEP 4: Give the necessary input that is required to design a simple text editor JavaScript application where we can manipulate the user input in different styles, edit the input, capitalize, and many string operations. Get the number for input using document.getElementById.
+
+STEP 5: Close the script and head tags.
+
+STEP 6: Give the input type in the body of the HTML.
+
+STEP 7 : End the HTML structure.
+
+PROGRAM:
+```
+<html>
+<head>
+<script type="text/javascript">
+function f1()
+{
+document.getElementById("num").style.fontWeight="bold";
+}
+function f2()
+{
+document.getElementById("num").style.fontStyle="italic";
+}
+function f3()
+{
+document.getElementById("num").style.textTransform="uppercase";
+}
+function f4()
+{
+document.getElementById("num").style.textTransform="lowercase";
+}
+function f5()
+{
+document.getElementById("num").style.textTransform="capitalize";
+}
+function f6()
+{
+document.getElementById("num").style.textAlign="right";
+}
+function f7()
+{
+document.getElementById("num").style.textAlign="left";
+}
+function f8()
+{
+document.getElementById("num").style.textAlign="center";
+}
+
+
+
+function f9()
+{
+document.getElementById("num").style.fontWeight = "normal";
+document.getElementById("num").style.textAlign = "left";
+document.getElementById("num").style.fontStyle = "normal";
+}
+</script>
+</head>
+<body>
+<form>
+<input type="button" onclick="f1()"  value="Bold">
+<input type="button" onclick="f2()"  value="Italics">
+<input type="button" onclick="f3()"  value="All Caps">
+<input type="button" onclick="f4()"  value="Small Caps">
+<input type="button" onclick="f5()"  value="Title Case">
+<input type="button" onclick="f6()"  value="Align Right">
+<input type="button" onclick="f7()"  value="Align Left">
+<input type="button" onclick="f8()"  value="Align Center">
+<input type="button" onclick="f9()"  value="Clear Formatting">
+<textarea rows="10" cols="35" id="num">
+Simple Text Editor using JavaScript
+</textarea>
+</form>
+</body>
+</html>
+```
+OUTPUT:
+![editpic](https://github.com/Mythili7339267708/ODD23-24-WT-JavaScript/assets/144260246/5f305664-3562-43f9-ba6a-cfdd128d0625)
+
