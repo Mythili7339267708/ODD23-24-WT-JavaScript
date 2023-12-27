@@ -191,3 +191,114 @@ alert(i);
 OUTPUT:
 
 ![nprimepic](https://github.com/Mythili7339267708/ODD23-24-WT-JavaScript/assets/144260246/f1544754-96af-4339-b8aa-d881bd6cdfca)
+
+RESULT:
+
+Thus the java code executed to construct a JavaScript code to generate ‘N’ prime numbers.
+
+PROGRAM 4
+
+AIM:
+
+To construct a JavaScript program to implement a simple calculator.
+
+DESIGNING PROCEDURE:
+
+STEP 1: Start define the document as HTML.
+
+STEP 2: Open the HTML structure with necessary head and body .Give the script type as text/javascript.
+
+STEP 3: Define the function for the program as function f1() for addition, function f2() for subtraction, function f3() for multiplication, function f4() for division, function f5() for sin(a), function f6() for cos(a) ,function f7() for tan(a), function f8() for a*a , function f9() for clear.
+
+STEP 4: Give the necessary input that is required to implement a simple calculator. Get the number for input using document.getElementById.
+
+STEP 5: Close the script and head tags.
+
+STEP 6: Give the input type in the body of the HTML.
+
+STEP 7: End the HTML structure.
+
+PROGRAM:
+```
+<html>
+<head>
+<script type="text/javascript">
+function f1()
+{
+var a=Number(document.getElementById("n1").value);
+var b=Number(document.getElementById("n2").value);
+document.getElementById("n3").value=a+b;
+}
+function f2()
+{
+var a=Number(document.getElementById("n1").value);
+var b=Number(document.getElementById("n2").value);
+document.getElementById("n3").value=a-b;
+}
+function f3()
+{
+var a=Number(document.getElementById("n1").value);
+var b=Number(document.getElementById("n2").value);
+document.getElementById("n3").value=a*b;
+}
+function f4()
+{
+var a=Number(document.getElementById("n1").value);
+var b=Number(document.getElementById("n2").value);
+document.getElementById("n3").value=a/b;
+}
+function f5()
+{
+var a=Number(document.getElementById("n1").value);
+var b=Number(document.getElementById("n2").value);
+document.getElementById("n3").value=Math.sin(a);
+}
+function f6()
+{
+var a=Number(document.getElementById("n1").value);
+var b=Number(document.getElementById("n2").value);
+document.getElementById("n3").value=Math.cos(a);
+}
+function f7()
+{
+var a=Number(document.getElementById("n1").value);
+var b=Number(document.getElementById("n2").value);
+document.getElementById("n3").value=Math.tan(a);
+}
+
+
+function f8()
+{
+var a=Number(document.getElementById("n1").value);
+var b=Number(document.getElementById("n2").value);
+document.getElementById("n3").value=a*a;
+}
+function f9()
+{
+document.getElementById("n1").value=" ";
+document.getElementById("n2").value=" ";
+document.getElementById("n3").value=" ";
+}
+</script>
+</head>
+<body>
+<form>
+<input type="button" onclick="f1()"  value="Add">
+<input type="button" onclick="f2()"  value="Subtract">
+<input type="button" onclick="f3()"  value="Multiply">
+<input type="button" onclick="f4()"  value="Divide">
+<input type="button" onclick="f5()"  value="Sin A">
+<input type="button" onclick="f6()"  value="Cos A">
+<input type="button" onclick="f7()"  value="Tan A">
+<input type="button" onclick="f8()"  value="A Square">
+<input type="button" onclick="f9()"  value="Clear">
+<input type="text" id="n1">
+<input type="text" id="n2">
+<input type="text" id="n3">
+</form>
+</body>
+</html>
+```
+OUTPUT:
+
+![calpic](https://github.com/Mythili7339267708/ODD23-24-WT-JavaScript/assets/144260246/dad13db2-ba46-4155-a22c-e70d4efd9799)
