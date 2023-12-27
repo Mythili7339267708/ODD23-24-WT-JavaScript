@@ -64,3 +64,64 @@ Enter Previous Reading
 OUTPUT:
 
 ![elepic](https://github.com/Mythili7339267708/ODD23-24-WT-JavaScript/assets/144260246/38bdb461-64cf-4481-9d90-dd38e44601b1)
+
+RESULT:
+
+Thus the java code executed to calculate the electricity bill.
+
+PROGRAM 2
+
+
+AIM:
+
+
+To create a form with java script code to compute the factorial of a given number without recursion.
+
+DESIGNING PROCEDURE:
+
+
+STEP 1: Start define the document as HTML.
+
+STEP 2: Open the HTML structure with necessary head and body .Give the script type as text/javascript.
+
+STEP 3: Define the function for the program as show().
+
+STEP 4: Give the necessary input that is require to compute the factorial like var i, n, fact. Get the number for input using document.getElementById.
+
+STEP 5: Using for-loop condition calculate the factorial. Close the script and head tags.
+
+STEP 6: Give the input type in the body of the HTML.
+
+STEP 7 : End the HTML structure.
+
+PROGRAM:
+```
+<html>
+<head>
+<script type="text/javascript">
+function show()
+{
+var i, n, fact;
+fact=1;
+n=Number(document.getElementById("num").value);
+for(i=1; i<=n; i++)  
+{
+fact= fact*i;
+}  
+document.getElementById("answer").value= fact;
+}
+</script>
+</head>
+<body>
+<form>
+Enter Number: <input type="text" id="num">
+<button onclick="show()">Factorial</button>
+<input type="text" id="answer">
+</form>
+</body>
+</html>
+```
+OUTPUT:
+
+![facpic](https://github.com/Mythili7339267708/ODD23-24-WT-JavaScript/assets/144260246/59f17e82-a88e-4ac2-9638-7389a10dec25)
+
