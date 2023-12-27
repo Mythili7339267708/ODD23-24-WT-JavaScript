@@ -398,3 +398,116 @@ Simple Text Editor using JavaScript
 OUTPUT:
 ![editpic](https://github.com/Mythili7339267708/ODD23-24-WT-JavaScript/assets/144260246/5f305664-3562-43f9-ba6a-cfdd128d0625)
 
+RESULT:
+
+Thus the java code executed to design a simple text editor JavaScript application where we can manipulate the user input in different styles, edit the input, capitalize, and many string operations.
+
+PROGRAM 6:
+
+AIM:
+
+To design a JavaScript program which displays error messages when a field in form is entered incorrectly.
+
+DESIGNING PROCEDURE:
+
+STEP 1: Start define the document as HTML.
+
+STEP 2: Open the HTML structure with necessary head and body .Give the script type as text/javascript.
+
+STEP 3: Define the function for the program as validate().
+
+STEP 4: Give the necessary input that is required to design a JavaScript program which displays error messages when a field in form is entered incorrectly.Get the number for input using document.getElementById.
+
+STEP 5: Using for-loop condition and if-else condition displays error messages when a field in form is entered incorrectly. Close the script and head tags.
+
+STEP 6: Give the input type in the body of the HTML.
+
+STEP 7 : End the HTML structure.
+
+PROGRAM :
+```
+<html>
+<head>
+  <title>Form Validation</title>
+  <script type="text/javascript">
+    var divs = new Array();
+    divs[0] = "errUserName";
+    divs[1] = "errPassword";
+    divs[2] = "errConfirm";
+    function validate()
+	{
+      var inputs = new Array();
+      inputs[0] = document.getElementById('username').value;
+      inputs[1] = document.getElementById('password').value;
+      inputs[2] = document.getElementById('confirm').value;
+      var errors = new Array();
+      errors[0] = "<span style='color:red'>Please enter your Username!</span>";
+      errors[1] = "<span style='color:red'>Please enter your password!</span>";
+      errors[2] = "<span style='color:red'>Please confirm your password!</span>";
+      for (i in inputs)
+      {
+        var errMessage = errors[i];
+        var div = divs[i];
+        if (inputs[i] == "")
+        	document.getElementById(div).innerHTML = errMessage;
+        else if (i==1)
+        {
+          var first = document.getElementById('password').value;
+          var second = document.getElementById('confirm').value;
+          if (second != first)
+        	document.getElementById('errConfirm').innerHTML = "<span style='color: red'>Your passwords don't match!</span>";
+          else
+       		document.getElementById(div).innerHTML = "OK!";
+        }
+        else
+        	document.getElementById(div).innerHTML = "OK!";
+       }
+     }
+        function finalValidate()
+        {
+          var count = 0;
+          for(i=0;i<2;i++)
+          {
+            var div = divs[i];
+            if(document.getElementById(div).innerHTML == "OK!")
+            count = count + 1;
+          }
+          if(count == 2)
+          	document.getElementById("errFinal").innerHTML = "All the data you entered is correct!!!";
+        }
+   </script>
+</head>
+<body>
+	<table id="table1">
+      <tr>
+        <td>User Name:</td>
+        <td><input type="text" id="first" onkeyup="validate();" /></td>
+        <td><div id="errUserName"></div></td>
+      </tr>
+      <tr>
+        <td>Password:</td>
+        <td><input type="password" id="password" onkeyup="validate();"/></td>
+        <td><div id="errPassword"></div></td>
+      </tr>
+      <tr>
+        <td>Confirm Password:</td>
+        <td><input type="password" id="confirm" onkeyup="validate();"/></td>
+        <td><div id="errConfirm"></div></td>
+      </tr>
+      <tr>
+        <td><input type="button" id="create" value="Create" onclick="validate();finalValidate();"/></td>
+        <td><div id="errFinal"></div></td>
+      </tr>
+	</table>
+</body>
+</html>
+```
+OUTPUT:
+
+![errmespic](https://github.com/Mythili7339267708/ODD23-24-WT-JavaScript/assets/144260246/aeaf7bb5-cb57-4896-b70d-5b91d3bd6e1e)
+
+RESULT:
+
+Thus the java code executed to design a JavaScript program which displays error messages when a field in form is entered incorrectly.
+
+
