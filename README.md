@@ -12,6 +12,8 @@ AIM:
 To create a form with java script code to calculate electricity bill.
 
 DESIGNING PROCEDURE:
+
+
 STEP 1: Start define the document as HTML.
 
 STEP 2: Open the HTML structure with necessary head and body .Give the script type as text/javascript.
